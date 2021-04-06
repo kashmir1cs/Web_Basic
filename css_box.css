@@ -1,6 +1,7 @@
 /* class를 지정하여 스타일 지정 가능  */
 .box{
-    background-color: aqua;
+    /* 글자 색상은 color로 지정 */
+    background-color: aqua; 
     width: 300px;
     height: 200px;
     /* margin추가 */
