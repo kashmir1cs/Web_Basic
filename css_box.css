@@ -1,0 +1,15 @@
+/* class를 지정하여 스타일 지정 가능  */
+.box{
+    background-color: aqua;
+    width: 300px;
+    height: 200px;
+    /* margin추가 */
+    margin: 10px;
+    
+}
+.box2{
+    /* 내부 여백추가  */
+    padding: 20px;
+    /* 실제크기가 Padding 입력 값 만큼 커짐 */
+    /* 요소의 기본 Size보다 커지게 됨 */
+}
