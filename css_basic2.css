@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+
+    background: white;
+    border-bottom: 111px solid lightgray;
+}
+
+.container {
+    width: 980px;
+    margin:auto;
+    background: white;
+    border-bottom: 10px solid lightgray;
+   
+}
+.container-left {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.logo {
+    float: left;
+    margin-right: 5px;
+    
+}
+/* logo class 안에 있는 img에만 적용 */
+/* img 태그마다 class 적용할 필요 없음 */
+.logo img{
+    display: block;
+
+}
+.menu {
+    float: left;
+    background: white;
+    border-bottom: 1px solid lightgray;
+}
+.menu-item {
+    float: left;
+    /* margin-right: 10px; */
+    padding: 8px 10px;
+    background: white;
+    border-bottom: 1px solid lightgray;
+}
+
+/* :: 가상요소 선택자 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
