@@ -1,0 +1,38 @@
+<!-- html tag 모음  -->
+<!-- meta tag example -->
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 국가 언어 목록은 iso 639-1/2/3 코드 검색 -->
+    <head>
+        <meta charset="UTF-8"/>
+        <title>HTML 요소 Reference</title>
+        <meta name="author" content="js">
+        <meta name="description" content="test">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width"> 
+        <!-- - 기타 정보
+        - 스타일 직접 입력
+        - 스타일 외부에서 가져와서 연결하기 -->
+        <!-- html도 link를 통해 가져오는 것도 가능 
+        "MIME" 관련 정보 확인-->
+        <!-- base Tag를 활용하여 link 검색위치 지정 가능 -->
+        <!-- base tag는 전체 html에서 한번만 사용 가능 -->
+        <base href="https://heropcode.github.io/GitHub-Responsive/img/">
+        <!-- base의 href 지정을 통해 상대경로 사전 설정 가능 -->
+        <link rel="stylesheet" href="./css/main2.css" hreflang="ko" type="text/css">
+        <!-- 스타일 직접 작성 -->
+        <!-- body tag에도 작성가능하나 권장X -->
+        <style type="text/css">
+            div{
+                color:red;
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="bg.jpg" alt="sample1">
+        <!-- 문서의 구조 표시 -->
+        <img src="feature-tile__build.png" alt="sample2">
+    </body>
+</html>
+
