@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- ul,ol tag  -->
+<!-- ul이 주로 사용 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ol,ul,li tag elements</title>
+</head>
+<body>
+    <!-- ul tag -->
+    <ul>
+        <li>
+            Apple
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mange</li>
+            </ul>
+
+        </li>
+        <li>Banana</li>
+        <li>Mange</li>
+    </ul>
+    <!-- ol tag elements -->
+    <!-- ol numbering type 변경 가능 -->
+    <!-- <ol type="a" reversed="reversed"> 아래와 동일한 의미 -->
+    <ol type="a" reversed>
+        <!-- reversed 속성은 IE에선 사용 불가 -->
+        <li>
+            Apple
+            <ol type="A">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mange</li>
+            </ol>
+
+        </li>
+        <li>Banana</li>
+        <li>Mange</li>
+    </ol>
+    <ol start="4">
+        <!-- 4번 부터 Start -->
+        <li>
+            Apple
+            <ol type="A">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mange</li>
+            </ol>
+
+        </li>
+        <li>Banana</li>
+        <li>Mange</li>
+    </ol>
+    <ol>
+        <li value="7">
+            <!-- value 속성 사용하면 numbering 지정 가능 -->
+            <!-- 다음 li tag는 자동으로 number 다음 숫자 지정 -->
+            Apple
+            <ol>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mange</li>
+            </ol>
+
+        </li>
+        <li value="99">Banana</li>
+        <li>Mange</li>
+    </ol>
+</body>
+</html>
