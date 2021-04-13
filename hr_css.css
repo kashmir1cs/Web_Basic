@@ -1,0 +1,17 @@
+/* border 선 미사용 */
+/* hr{
+    border: none;
+} */
+/* 2px 점선(dash) color : red */
+
+hr{
+    border-top: 2px dashed yellowgreen;
+    border-right: 2px dashed red;
+    border-left: 2px dashed blueviolet;
+    border-bottom: 2px dashed green;
+    padding: 100px;
+    /* padding 적용 가능 */
+    /* padding: 20px; */
+    /* 2px로 지정하여도 실제로는 상/하 포함하면 4px */
+    /* block 개체 : 상/하/좌/우 지정 가능 */
+}
