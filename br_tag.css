@@ -1,0 +1,8 @@
+.line_height_50 {
+    line-height: 50px;
+}
+
+/* line 간격 계산 : line-height - font size (pixel, 기본은 16px) */
+.line_height_20 {
+    line-height: 20px;
+}
