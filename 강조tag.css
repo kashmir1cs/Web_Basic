@@ -1,0 +1,9 @@
+/* b tag에 bold 미적용 */
+b{
+    font-weight: normal;
+}
+/* em tag 이탤릭 속성 미적용 */
+em{
+    color:brown
+
+}
