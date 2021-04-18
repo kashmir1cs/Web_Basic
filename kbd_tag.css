@@ -1,0 +1,9 @@
+/* css로 꾸미기 가능 */
+kbd {
+    padding : 0 3px;
+    border-radius: 3px;
+    border-top: 2px solid rgb(240,240,240);
+    border-bottom: 2px solid rgb(205,205,205);
+    border-left: 2px solid rgb(240,220,11);
+    border-right: 2px solid rgb(240,240,240);
+}
