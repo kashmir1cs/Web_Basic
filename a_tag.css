@@ -1,0 +1,23 @@
+/* a_tag.html의 css */
+a{
+    font-weight: bold;
+    width:100px;
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid black;
+    /* border 아이콘 굴곡주기  */
+    border-radius: 6px;
+    display: block;
+    /* block 요소로 변경 */
+    text-align: center;
+}
+/* hover : 마우스를 올려놓으면 색상이 변경됨 */
+a:hover{
+    background-color: orange;
+}
+
+
+h2{
+    padding-bottom: 1000px;
+    
+}
