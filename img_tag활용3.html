@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img srcset</title>
+</head>
+<body>
+    <!-- srcset: 브라우저에 제시할 이미지들과 그 이미지들의 원본 크기 지정 -->
+    <!-- 작은크기 부터 입력  -->
+    <!-- px 단위로 입력하지 않는 것에 주의 할 것 -->
+    <!-- px 대신 w, x 입력하여 사용 -->
+    <!-- w : width descriptor : 가로 너비 -->
+    <!-- 400x300일 경우 w는 400 -->
+    <!-- view port 너비에 따라 3개의 이미지중 자동으로 선택 -->
+    <!-- CSS에서도 media query를 통해 가능하나 srcset이 사용이 간편 -->
+    <!-- width 속성 지정을 통해 px 단위로 폭 제어 가능  -->
+
+    <!-- x단위 제어 : 이미지 비율로 크기 제어  -->
+    <img srcset="sampleimage/samples_small.png 1x,        
+        sampleimage/samples_medium.png 1.75x,
+        sampleimage/samples_large.png 2.5x "
+        src="./sampleimage/samples.png" 
+        alt="img">
+<br>
+</body>
+</html>
