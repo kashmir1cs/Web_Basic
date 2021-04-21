@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images : srcset, sizes 사용</title>
+</head>
+<body>
+    <!-- img srcset tag 연습 -->
+    <!-- size : 미디어 크기에 맞는 픽셀크기 지정 -->
+    <!-- min-width 1000px이상 이면 700px로 지정  -->
+    <!-- width와 차이있음 -->
+    <!--sizes tag는 미디어 크기와 최적화 사이즈를 같이 고려 --> 
+    <!-- sizess 와 width중 width가 우선권있음 -->
+     
+    <img
+     srcset="sampleimage/samples_small.png 400w,
+            sampleimage/samples_medium.png 700w,
+            sampleimage/samples_large.png 1000w" 
+        sizes="(min-width:1000px) 200px"
+            src="./sampleimage/samples.png" 
+        alt="img">
+    
+
+</body>
+</html>
