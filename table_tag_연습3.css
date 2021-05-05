@@ -1,0 +1,20 @@
+/* td 보더지정시 칸 사이 여백 존재 */
+/* table이 td보다 상위  */
+/* table에서 collapse 지정하면 칸 사이 여백 제거 */
+table{
+    border-collapse: collapse;
+    
+
+}
+
+td{
+    border: 1px solid red;
+    /* 상하좌우 여백 지정하기  */
+    padding:10px;
+}
+th{
+    border: 1px solid red;
+    /* 상하좌우 여백 지정하기  */
+    padding:10px;
+
+}
