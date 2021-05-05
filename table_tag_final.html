@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 출처 : https://heropy.blog/ -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./table_tag_final.css">
+    <title>Table</title>
+</head>
+
+<body>
+    <table>
+        <!-- tr : 행 , th,td : 각각의 셀에 입력하는 Data -->
+        <caption>Fruits</caption>
+        <colgroup>
+            <col span="2" style="background-color: yellowgreen;">
+            <col style="background-color: tomato;">
+        </colgroup>
+        <!-- thead, tbody, tfoot은 형태에 영향 X -->
+        <!-- 머릿글 영역 thead -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <!-- body영역 tbody -->
+        <tbody>
+            <tr>
+                <td>F123A</td>
+                <td>Apple</td>
+                <td>$22</td>
+            </tr>
+            <tr>
+                <td>F098B</td>
+                <td>Banana</td>
+                <td>$19</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
