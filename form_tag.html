@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form_tag.css">
+    <title>Form Tag</title>
+</head>
+<body>
+    <!-- form tag 실습 -->
+    <!-- action : 데이터주소 전송 -->
+    <!-- action에 지정한 주소로 페이지 이동 -->
+    <!-- method="GET" 생략해도 동일 -->
+    <!-- Autocomplete : 자동완성 사용여부 -->
+    <!-- InputType은 양식까지 지정하는것 가능 -->
+    <!-- novalidate : 양식 검사 X -->
+    <!-- target : 새로운 페이지 -->
+    <form action="abbr.html" method="GET" novalidate target="_blank"> 
+        <input type="email" name="email">
+        <input type="password" name="password">
+        <button type="submit">로그인</button>
+
+    </form>
+    <form action="abbr.html" method="POST" autocomplete="on">
+        <input type="email" name="email">
+        <input type="password" name="password">
+        <button type="submit">로그인</button>
+
+    </form>
+</body>
+</html>
