@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input_tag.css">
+    <title>Form Tag</title>
+</head>
+<body>
+
+    <!-- input Tag sample -->
+    <!-- browser별로 표현되는 방식은 차이 있을 수 있음 -->
+    <!-- autofocus : 자동으로 커서 이동 -->
+    <!-- maxlength = 글자수 제한 -->
+
+    <!-- <input type="text" name="" id="" autofocus maxlength="6"> -->
+    <form action="./img.html" method="GET">
+        <input type="email" name="id">
+        <input type="password" name="pw">
+        <!-- <input type="button" value="로그인"> -->
+        <!-- button은 별도의 동작X -->
+        <input type="submit" value="login">
+        <!-- submint은 전송가능 -->
+    </form>
+
+    <!-- 숫자만 입력가능하게 변경 가능 -->
+    <!-- IE에서는 미지원 -->
+    <!-- readonly : 읽기 전용으로 변경 -->
+    <!-- value: default값 지정가능 -->
+    <input type="number" value="1234" readonly>
+    <!-- place holder : 초기에 표시하는 문구, 값 입력하면 글자 사라짐 -->
+    <input type="number" placeholder="Enter the number" max="1234" step="10">
+    <!-- max: 최대값 입력 가능, min도 적용가능 ,step = 증가 간격-->
+    <input type="checkbox" checked>
+    <!-- file 선택 -->
+    <input type="file" value="Files">
+    <!--multiple file selection -->
+    <input type="file" multiple>
+    <!-- 이미지 삽입 -->
+    <!-- image를 버튼으로 활용가능 -->
+    <form action="./index.html">
+        
+        <input type="image" src="./imgsample.jpg" alt="image">
+    </form>
+    <!-- radio는 여러개 사용 name으로 grouping-->
+    <input type="radio" name="radio">
+    <input type="radio" name="radio" checked>
+    <input type="radio" name="radio">
+    <form action="./kbd_tag.html">
+        <!-- reset 버튼은 form tag 내부만 초기화  -->
+        <input type="text" name="id">
+        <input type="password" name="password" id="">
+        <input type="submit" value="log-in">
+        <input type="reset" value="reset">
+    </form>
+
+</body>
+</html>
