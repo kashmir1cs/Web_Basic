@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- 출처 : https://heropy.blog/ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input_tag.css">
+    <title>select with option tag</title>
+</head>
+<body>
+        <!-- multiple 지정할 경우 ctrl / shift key이용하여 복수 항목 선택 가능 -->
+        <select >
+        <!-- VBA combobox와 유사 -->
+        <optgroup label="Coffee">
+          <option>Americano</option>
+          <option>Caffe Mocha</option>
+          <!-- 내부 속성으로 지정가능 -->
+          <option label="Cappuccino" value="Cappuccino"></option>
+        </optgroup>
+        <!-- disabled option을 통해 선택기능 비활성화 가능 -->
+        <optgroup label="Latte" disabled>
+          <option>Caffe Latte</option>
+          <option>Vanilla Latte</option>
+        </optgroup>
+        <optgroup label="Smoothie">
+          <option>Plain</option>
+          <option>Strawberry</option>
+          <option>Banana</option>
+          <option>Mango</option>
+        </optgroup>
+      </select>
+
+      <select name="select list">
+        <!-- optgroup으로 그룹화 -->
+        <optgroup label="세단">
+            <option label="구아방" value="구아방">
+            <option>쏘나타</option>
+            <option>그랜다이져</option>
+        </optgroup>
+        <optgroup label="SUV">
+            <option>투삼</option>
+            <option>서퍼티지</option>
+            <option>네로</option>
+
+        </optgroup>
+        <optgroup label="Truck">
+            <option disabled>포터르기니</option>
+        </optgroup>
+      </select>
+</body>
+</html>
