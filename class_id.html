@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input_tag.css">
+    <title>class 연습</title>
+    <style>
+        .section{
+            width: 100px;
+            color: red;
+            background-color: rgb(210, 214, 226);
+        }
+        #section{
+            width: 200px;
+            color: seagreen;
+            background-color: rgb(233, 147, 107);
+        }
+    </style>
+</head>
+<body>
+    <!-- class와 ID의 차이 : 중복 가능 여부 , Class는 중복 사용, ID는 하나만 사용 -->
+    <div class="section">q</div>
+    <div class="section">q</div>
+    <div class="section">a</div>
+    <div class="section">a</div>
+    <div class="section">a</div>
+    <div class="section">a</div>
+    <div class="section">a</div>
+    <div id="section">yes I can</div>
+    <script>
+        const section =document.querySelector('.section');
+        const sectionId=document.getElementById('section')
+    </script>
+
+</body>
+</html>
