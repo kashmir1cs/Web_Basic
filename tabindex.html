@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>tabindex </title>
+</head>
+<body>
+    <!-- tabindex를 통하여 tab 순서 지정가능 -->
+    <!-- 대화형 contents에 적용가능 -->
+    <input type="text" value="소나타">
+    <input type="text" value="구아방">
+    <!-- div tag에도 적용가능 -->
+    <div tabindex="0">2.5</div>
+
+    <input type="text" value="아반떼">
+    <input type="text" value="그랜져">
+    <!-- tabindex -1적용시 tab이동 제외 -->
+    <input type="text" value="BMW" tabindex="-1">
+    <input type="text" value="BENZ">
+    
+
+</body>
+</html>
