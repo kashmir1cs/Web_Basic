@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input_tag.css">
+    <title>progress tag</title>
+</head>
+<body>
+    <!-- javascript와 연계하여 활용 -->
+    <!-- max값을 지정하여 범위 설정 가능 -->
+    <!-- <progress value="70" max="1000">70 %</progress> -->
+    <!-- max 값을 미지정하였을 경우 : 0과 1사이 값으로 지정-->
+    <!-- <progress value="0.07"></progress> -->
+    <progress value="0" max="100"></progress>
+    <script>
+        // 1000ms = 1sec마다 progress value에 값 더함
+        const progress = document.querySelector('progress');
+        const interval = setInterval(function(){
+            progress.value +=1;
+            if (progress.value>=100) clearInterval(interval);
+        },10)
+    </script>
+</body>
+</html>
