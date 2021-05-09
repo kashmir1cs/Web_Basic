@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./data_attribute.css">
+    <title>data (user define) attribute </title>
+</head>
+<body>
+    <!-- data-* : 사용자 정의 데이터 속성, javascript에서 활용 가능 -->
+    <div id="car" data-car-name="Niro" data-car-year="2018" >니로</div>
+    <script>
+        // div 찾는 tag 
+        // -소문자 : 대문자로 
+        // 변수 선언 : me 변수에 해당 ID 객체 찾아서 할당
+        const me = document.getElementById('car');
+        // console log에 사용자가 정의한 html data변수 출력 
+        // 브라우저 실행 후 F12 (개발자도구)에서 확인 가능 
+        console.log( me.dataset.carName);
+        console.log( me.dataset.carYear);
+        
+    </script>
+</body>
+</html>
