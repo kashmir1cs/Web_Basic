@@ -1,0 +1,27 @@
+<!-- 출처 : https://heropy.blog/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input_tag.css">
+    <title>Form Tag</title>
+</head>
+<body>
+    <!-- label 사용방법 2가지 -->
+    <!-- 01.label 가능 요소를 참조 -->
+    <!-- label을 클릭해도 check 가능 -->
+    <!-- Label tag 가능 요소 :<button>, <input>, <progress>, <select>, <textarea> -->
+    <input type="checkbox" id="user-agreement" />
+    <!-- for 속성을 통해 id 참조 가능 -->
+    <label for="user-agreement">동의하십니까?</label>
+    <!-- 02.label 가능 요소를 포함 -->
+    <!-- label tag안에 input tag 포함 -->
+    <label><input type="checkbox" />동의하십니까?</label>
+    <label for="">
+        검색 <input type="search">
+    </label>
+</body>
+</html>
