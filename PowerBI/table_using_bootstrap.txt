@@ -1,0 +1,37 @@
+table = "<!-- using css -->
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css'>
+    <style>
+        .pad{
+            margin-left: 5px ;
+            margin-right: 20px; 
+        }
+        .text{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <table class='table table-hover'>
+            <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>alphabet</th>
+                  <th>text</th>
+                  <th>korean</th>
+                </tr>
+              </thead>"&
+        "<tbody>"& UNICHAR(10)&
+                CONCATENATEX(Contents,Contents[tag1]&UNICHAR(10)&Contents[tag2]&UNICHAR(10)&Contents[tag3]&UNICHAR(10)&Contents[tag4]&UNICHAR(10)&Contents[tag5])&UNICHAR(10)&
+        "</tbody>"&"
+        </table>
+        
+    </div>
+
+</body>"
